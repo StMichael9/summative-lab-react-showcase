@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+// Page imports
 import LandingPage from "./Pages/LandingPage";
 import Shop from "./Pages/Shop";
 import AboutPage from "./Pages/AboutPage";
-
+//Component imports
 import NavBar from "./Components/NavBar";
+// Data imports
 import shopData from "./Data/ShopData";
-
-// import "./App.css";
+//Hook imports
+import useLocalStorage from "./Hooks/useLocalStorage";
 
 function App() {
-  const [products, setProducts] = useState(shopData);
+  const [products, setProducts] = useLocalStorage("products", shopData); // "products is the key value and shopData is the initalValue"
   const [search, setSearch] = useState("");
 
   return (
