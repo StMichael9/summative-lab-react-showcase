@@ -39,6 +39,17 @@
   margin-top: 0;
 }
 
+.no-results {
+  text-align: center;
+  padding: 40px 24px;
+  color: #6b6375;
+  font-size: 1.1rem;
+}
+
+.no-results p {
+  margin: 0;
+}
+
 @media (max-width: 600px) {
   .shop-page {
     padding: 16px;
