@@ -30,6 +30,14 @@ export default function NavBar() {
         >
           About
         </NavLink>
+        <NavLink
+          to="/form"
+          className={({ isActive }) =>
+            isActive ? "nav-item active" : "nav-item"
+          }
+        >
+          Add +
+        </NavLink>
       </div>
     </nav>
   );

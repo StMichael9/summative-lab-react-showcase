@@ -1,0 +1,68 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "HeBRews",
+      "description": "Admin portal for managing HeBRews products",
+      "phone_number": "555-5555"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Caramel Latte",
+      "price": 5.99,
+      "description": "Rich espresso with steamed milk and caramel drizzle",
+      "image": "/images/summative-lab-react-showcase-photos-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Americano",
+      "price": 3.75,
+      "description": "Bold espresso softened with hot water",
+      "image": "/images/summative-lab-react-showcase-photos-2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Vanilla Cappuccino",
+      "price": 5.5,
+      "description": "Foamy cappuccino with a hint of vanilla sweetness",
+      "image": "/images/summative-lab-react-showcase-photos-1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hazelnut Latte",
+      "price": 5.99,
+      "description": "Smooth espresso with creamy hazelnut flavor",
+      "image": "/images/summative-lab-react-showcase-photos-2.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Matcha Latte",
+      "price": 5.75,
+      "description": "Earthy Japanese matcha blended with steamed milk",
+      "image": "/images/summative-lab-react-showcase-photos-1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Chai Tea Latte",
+      "price": 5.25,
+      "description": "Spiced black tea with steamed milk and cinnamon",
+      "image": "/images/summative-lab-react-showcase-photos-2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Iced Caramel Macchiato",
+      "price": 6.5,
+      "description": "Layered espresso, milk, and caramel over ice",
+      "image": "/images/summative-lab-react-showcase-photos-1.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Blueberry Muffin",
+      "price": 3.25,
+      "description": "Freshly baked muffin with real blueberries",
+      "image": "/images/summative-lab-react-showcase-photos-2.jpg"
+    }
+  ]
+}
