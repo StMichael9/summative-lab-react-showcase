@@ -39,6 +39,37 @@
   margin-top: 0;
 }
 
+.product-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+
+.product-actions button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  color: #08060d;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.product-actions button:hover {
+  border-color: #aa3bff;
+  box-shadow: 0 6px 14px rgba(170, 59, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.product-actions button:active {
+  transform: translateY(0);
+}
+
 .shop-status {
   text-align: center;
   padding: 24px 12px;

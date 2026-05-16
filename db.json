@@ -23,16 +23,9 @@
       "image": "/images/summative-lab-react-showcase-photos-2.jpg"
     },
     {
-      "id": 5,
-      "name": "Vanilla Cappuccino",
-      "price": 5.5,
-      "description": "Foamy cappuccino with a hint of vanilla sweetness",
-      "image": "/images/summative-lab-react-showcase-photos-1.jpg"
-    },
-    {
       "id": 6,
       "name": "Hazelnut Latte",
-      "price": 5.99,
+      "price": 7.99,
       "description": "Smooth espresso with creamy hazelnut flavor",
       "image": "/images/summative-lab-react-showcase-photos-2.jpg"
     },
@@ -56,13 +49,6 @@
       "price": 6.5,
       "description": "Layered espresso, milk, and caramel over ice",
       "image": "/images/summative-lab-react-showcase-photos-1.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Blueberry Muffin",
-      "price": 3.25,
-      "description": "Freshly baked muffin with real blueberries",
-      "image": "/images/summative-lab-react-showcase-photos-2.jpg"
     }
   ]
 }

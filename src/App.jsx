@@ -7,6 +7,7 @@ import AboutPage from "./Pages/AboutPage";
 import AddProductPage from "./Pages/AddProduct";
 //Component imports
 import NavBar from "./Components/NavBar";
+import EditProduct from "./Components/EditProduct";
 
 //Hook imports
 import useLocalStorage from "./Hooks/useLocalStorage";
@@ -64,13 +65,24 @@ function App() {
         <Route
           path="/shop"
           element={
-            <Shop products={products} search={search} setSearch={setSearch} />
+            <Shop
+              products={products}
+              search={search}
+              setSearch={setSearch}
+              deleteProduct={deleteProduct}
+            />
           }
         />
         <Route path="/about" element={<AboutPage />} />
         <Route
           path="/form"
           element={<AddProductPage addProduct={addProduct} />}
+        />
+        <Route
+          path="/edit/:id"
+          element={
+            <EditProduct products={products} updateProduct={updateProduct} />
+          }
         />
       </Routes>
     </BrowserRouter>
