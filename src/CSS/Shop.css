@@ -39,39 +39,6 @@
   margin-top: 0;
 }
 
-.product-actions {
-  display: flex;
-  gap: 8px;
-  padding: 0 12px 12px;
-}
-
-.product-actions button {
-  flex: 1;
-  padding: 8px 10px;
-  border-radius: 10px;
-  border: 1px solid #dcdcdc;
-  background: #ffffff;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.price-editor {
-  padding: 0 12px 12px;
-}
-
-.price-label {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-weight: 600;
-}
-
-.price-label input {
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid #dcdcdc;
-}
-
 .shop-status {
   text-align: center;
   padding: 24px 12px;

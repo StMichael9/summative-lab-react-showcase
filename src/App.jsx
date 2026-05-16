@@ -7,20 +7,53 @@ import AboutPage from "./Pages/AboutPage";
 import AddProductPage from "./Pages/AddProduct";
 //Component imports
 import NavBar from "./Components/NavBar";
-// Data imports
-import shopData from "./Data/ShopData";
 
 //Hook imports
 import useLocalStorage from "./Hooks/useLocalStorage";
 
+const API = "http://localhost:3001/products";
 function App() {
-  const [products, setProducts] = useLocalStorage("products", shopData); // "products is the key value and shopData is the initalValue"
+  const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
 
-  use;
+  useEffect(() => {
+    const loadData = async () => {
+      const res = await fetch(API);
+      const data = await res.json();
+      setProducts(data);
+    };
+    loadData();
+  }, []);
 
-  const addProduct = (newProduct) => {
-    setProducts([...products, newProduct]);
+  const addProduct = async (newProduct) => {
+    const res = await fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newProduct),
+    });
+
+    const saved = await res.json();
+    setProducts([...products, saved]);
+  };
+
+  const updateProduct = async (id, updates) => {
+    const res = await fetch(`${API}/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updates),
+    });
+
+    const updated = await res.json();
+
+    setProducts(products.map((p) => (p.id === id ? updated : p)));
+  };
+
+  const deleteProduct = async (id) => {
+    await fetch(`${API}/${id}`, {
+      method: "DELETE",
+    });
+
+    setProducts(products.filter((p) => p.id !== id));
   };
 
   return (
